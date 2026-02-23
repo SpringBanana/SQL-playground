@@ -1,4 +1,4 @@
---=============== МОДУЛЬ 3. ОСНОВЫ SQL =======================================
+--=============== МОДУЛЬ 2. ОСНОВЫ SQL =======================================
 --= ПОМНИТЕ, ЧТО НЕОБХОДИМО УСТАНОВИТЬ ВЕРНОЕ СОЕДИНЕНИЕ И ВЫБРАТЬ СХЕМУ PUBLIC===========
 SET search_path TO public;
 
@@ -177,6 +177,7 @@ SELECT s.last_name || ' ' || s.first_name name, count(payment_id), CASE WHEN sum
     FROM payment p
     LEFT JOIN staff s on p.staff_id = s.staff_id
     GROUP BY s.staff_id
+
 
 
 
