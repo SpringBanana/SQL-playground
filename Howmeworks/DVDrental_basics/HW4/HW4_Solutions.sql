@@ -1,4 +1,4 @@
---=============== МОДУЛЬ 5. РАБОТА С POSTGRESQL =======================================
+--=============== МОДУЛЬ 4. РАБОТА С POSTGRESQL =======================================
 --= ПОМНИТЕ, ЧТО НЕОБХОДИМО УСТАНОВИТЬ ВЕРНОЕ СОЕДИНЕНИЕ И ВЫБРАТЬ СХЕМУ PUBLIC===========
 SET search_path TO public;
 
@@ -162,6 +162,7 @@ select country,
        max(case when rn_last = 1 then name end) as last_rented
 from cte2
 group by country
+
 
 
 
