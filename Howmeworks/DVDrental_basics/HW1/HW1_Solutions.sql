@@ -1,4 +1,4 @@
---=============== МОДУЛЬ 2. РАБОТА С БАЗАМИ ДАННЫХ =======================================
+--=============== МОДУЛЬ 1. РАБОТА С БАЗАМИ ДАННЫХ =======================================
 --= ПОМНИТЕ, ЧТО НЕОБХОДИМО УСТАНОВИТЬ ВЕРНОЕ СОЕДИНЕНИЕ И ВЫБРАТЬ СХЕМУ PUBLIC===========
 SET search_path TO public;
 
@@ -117,4 +117,5 @@ select
     concat(upper(left(split_part(email,'@', 1), 1)), lower(right(split_part(email,'@', 1), -1))) name,
     concat(upper(left(split_part(email, '@', 2), 1)), lower(right(split_part(email, '@', 2), -1))) domain
 from customer
+
 
