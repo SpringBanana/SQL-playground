@@ -38,5 +38,5 @@
 
 ##  Диаграмма данных
 
-![Структура базы данных stroy](./stroy_diagram.png)
+![Структура базы данных stroy](./Stroy_diagram.png)
 
